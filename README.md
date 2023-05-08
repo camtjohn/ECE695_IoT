@@ -30,6 +30,7 @@ To investigate the effects of background noise and watch placement each of the t
 - Participant 2 Session 2: watch worn on passive hand
 
 ## Post processing of data
+To align the acoustic and inertial data, the first and last 5 seconds of the audio file were removed. The next step was to downsample the recordings, since the smartphones sampled at 44.1 kHz while the original paper sampled at 22.05 kHz. For the inertial data, the debug logs were parsed and only timestamps that collected both gyroscope and accelerometer data were used to generate the final csv.
 
 
 ### References for paper we are attempting to reproduce:
